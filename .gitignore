@@ -7,4 +7,9 @@ target
 /.springBeans
 gwt-unitCache
 gwt-unitCache/*
-
+WebContent/WEB-INF/classes
+WebContent/WEB-INF/classes/*
+WebContent/WEB-INF/lib
+WebContent/WEB-INF/lib/*
+WebContent/WEB-INF/deploy
+WebContent/WEB-INF/deploy/*
