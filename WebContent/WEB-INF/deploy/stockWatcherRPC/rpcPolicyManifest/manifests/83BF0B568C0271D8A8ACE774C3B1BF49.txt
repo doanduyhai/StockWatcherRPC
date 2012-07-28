@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.stockwatcher_rpc.client.RandomizeService
+path: 1B7DDA56C0788069E613346DEF760FB3.gwt.rpc

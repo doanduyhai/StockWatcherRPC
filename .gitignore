@@ -1,0 +1,9 @@
+target/*
+target
+.settings
+.settings/*
+/.classpath
+/.project
+/.springBeans
+gwt-unitCache
+gwt-unitCache/*
