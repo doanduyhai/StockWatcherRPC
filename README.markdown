@@ -6,9 +6,7 @@ Presentation
 
  This is a demo project for GWT RPC integration with Spring based on the original [StockWatcher] (http://code.google.com/p/google-web-toolkit/downloads/detail?name=Tutorial-GettingStarted-2.1.zip) tutorial from Google.
  
- This demo is a support for the following article
- 
-  [GWT RPC Integration with Spring] (http://doanduyhai.wordpress.com/2012/05/06/spring-mvc-part-v-exception-handling)
+ This demo is a support for the following article [GWT RPC integration with Spring] (http://doanduyhai.wordpress.com/2012/07/29/gwt-rpc-integration-with-spring)
  
  
  Installation
