@@ -62,7 +62,7 @@ public class SpringRPCDispatcherServlet extends RemoteServiceServlet
 	{
 		try
 		{
-			RemoteService handler = getBean(getThreadLocalRequest());
+			RemoteService handler = retrieveSpringBean(getThreadLocalRequest());
 			RPCRequest rpcRequest = RPC.decodeRequest(payload, handler.getClass(), this);
 			onAfterRequestDeserialized(rpcRequest);
 			if (logger.isDebugEnabled())
@@ -78,13 +78,7 @@ public class SpringRPCDispatcherServlet extends RemoteServiceServlet
 		}
 	}
 
-	/**
-	 * Determine Spring bean to handle request based on request URL, e.g. a request ending in /myService will be handled by bean with name "myService".
-	 * 
-	 * @param request
-	 * @return handler bean
-	 */
-	protected RemoteService getBean(HttpServletRequest request)
+	protected RemoteService retrieveSpringBean(HttpServletRequest request)
 	{
 		String serviceURL = extractServiceURL(request);
 		RemoteService bean = getBeanByServiceURL(serviceURL);
